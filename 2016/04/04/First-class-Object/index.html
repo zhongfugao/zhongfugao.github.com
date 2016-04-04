@@ -57,15 +57,16 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhongfugao's blog">
-<meta property="og:url" content="http://zhongfugao.github.io/index.html">
+<meta name="description" content="定义In programming language design, a first-class citizen (also type, object, entity, or value) in a given programming language is an entity which supports all the operations generally available to othe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="First-class Object">
+<meta property="og:url" content="http://zhongfugao.github.io/2016/04/04/First-class-Object/index.html">
 <meta property="og:site_name" content="zhongfugao's blog">
-<meta property="og:description">
+<meta property="og:description" content="定义In programming language design, a first-class citizen (also type, object, entity, or value) in a given programming language is an entity which supports all the operations generally available to othe">
+<meta property="og:updated_time" content="2016-04-04T07:42:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhongfugao's blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="First-class Object">
+<meta name="twitter:description" content="定义In programming language design, a first-class citizen (also type, object, entity, or value) in a given programming language is an entity which supports all the operations generally available to othe">
 
 
 
@@ -83,7 +84,7 @@
   };
 </script>
 
-  <title> zhongfugao's blog </title>
+  <title> First-class Object | zhongfugao's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -104,9 +105,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -183,9 +182,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -205,10 +204,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/04/04/First-class-Object/" itemprop="url">
-                  First-class Object
-                </a>
+                First-class Object
               
             
           </h1>
@@ -254,20 +250,18 @@
       
 
       
-        
-          
-            <h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>In programming language design, a first-class citizen (also type, object, entity, or value) in a given programming language is an entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable.</p>
+        <h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>In programming language design, a first-class citizen (also type, object, entity, or value) in a given programming language is an entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable.</p>
 <h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ol>
 <li>JavaScript中的function.</li>
 <li>Gradle中的task.</li>
 </ol>
 
-          
-        
       
     </div>
 
     <div>
+      
+        
       
     </div>
 
@@ -275,127 +269,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/27/使用Kubrick修复KT/" rel="next" title="使用Kubrick修复KT">
+                <i class="fa fa-chevron-left"></i> 使用Kubrick修复KT
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/03/27/使用Kubrick修复KT/" itemprop="url">
-                  使用Kubrick修复KT
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T17:31:14+08:00" content="2016-03-27">
-              2016-03-27
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/27/使用Kubrick修复KT/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/使用Kubrick修复KT/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>KT从5.1.2向更高版本升级的时候，出现了网络上常见的<code>Error 6</code>错误。问题出现已经有好长时间了，今天决定一定要解决了！</p>
-<p>之前一直follow网上比较流行的变砖挽救指南，使用MfgTool+Fastboot的办法，但是当试图进入diags模式的时候卡大树了，等待很久也无法进入diags界面。</p>
-<p>另外有一种方式之前也看到过，操作略复杂，今天有时间正好来尝试下。</p>
-<p>参考如下两篇文章：<br>    <a href="http://www.miui.com/archiver/?tid-2135691.html" target="_blank" rel="external">http://www.miui.com/archiver/?tid-2135691.html</a><br>    <a href="http://www.mobileread.com/forums/showthread.php?t=206064" target="_blank" rel="external">http://www.mobileread.com/forums/showthread.php?t=206064</a></p>
-<p>其中第二篇文章已经把流程说的很清楚了，按照这里面的流程操作一遍便通过了。</p>
-<p>我是使用USB来做的，具体如下：</p>
-<ol>
-<li>下载Live USB Stick和Live CD image</li>
-<li>通过win32diskmanager烧录USB Stick，然后把CD image拷贝到USB的<code>efi/boot/</code>目录下</li>
-<li>使用制作好的U盘启动电脑，按照提示通过usb连接kindle</li>
-<li>接下去只要按照提示操作就可以了</li>
-</ol>
-<p>整个过程大概二十分钟左右就可以了，然后就可以把KT升级到最新版本了。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -403,6 +302,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/04/First-class-Object/"
+           data-title="First-class Object" data-url="http://zhongfugao.github.io/2016/04/04/First-class-Object/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -422,8 +329,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -472,6 +388,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用"><span class="nav-number">2.</span> <span class="nav-text">应用</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -556,6 +483,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
 
   
 
